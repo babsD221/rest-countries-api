@@ -1,0 +1,52 @@
+.page-header {
+    width: 100vw;
+    position: fixed;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    align-items: center;
+}
+
+h2 {
+    font-size: 20px;
+    white-space: nowrap;
+
+}
+p {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.mat-icon {
+    font-size: 18px;
+}
+
+:host-context(.light) nav {
+    color: var(--color-text-light);
+    background-color: var(--color-elements-light);
+    box-shadow: 1px 2px 5px 0px #AAA7A7;
+}
+:host-context(.dark) nav {
+    color: var(--color-text-dark);
+    background-color: var(--color-elements-dark);
+}
+.display-mode {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 500px) {
+    .content {
+        padding: 4rem 1rem;
+    }
+}

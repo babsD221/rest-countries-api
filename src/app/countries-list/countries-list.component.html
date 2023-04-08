@@ -1,0 +1,10 @@
+<div class="main">
+    <app-search-filter p-search-filter (searchTxt)="onSearchText($event)" (filterChanged)="filterByRegion($event)" ></app-search-filter>
+    <div class="container">
+        <div class="countries-list" *ngFor="let country of countries" >
+            <app-country [country]="country"></app-country>
+        </div>
+    </div>
+
+
+</div>

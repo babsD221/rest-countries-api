@@ -1,0 +1,8 @@
+<div class="search-filter">
+    <div class="search-input">
+        <mat-icon>search</mat-icon>
+        <input   (input)="sendFilterText($event)" type="text" placeholder="Search for country...">
+    </div>
+    <app-dropdown  placeHolder="Filter by Region" [options]="options" (valueChanged)="applyFilter($event)"></app-dropdown>
+    
+</div>

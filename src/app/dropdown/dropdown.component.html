@@ -1,0 +1,14 @@
+<div class="dropdown">
+    <div class="default-label">
+        <span>{{placeHolder}}</span>
+        <span class="material-icons-outlined" (click)="toggleOptions()">
+            expand_more
+            </span>
+    </div>
+
+    <ul *ngIf="showOptions" class="dropdown-options">
+        <li *ngFor="let option of options" (click)="chooseOption(option)">{{option}}</li>
+    </ul>
+
+    
+</div>

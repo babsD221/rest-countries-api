@@ -1,1 +1,5 @@
-<app-header></app-header>
+<div [ngClass]="theme | async" class="app">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    
+</div>

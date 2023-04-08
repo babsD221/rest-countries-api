@@ -1,0 +1,35 @@
+.search-filter {
+    display: flex;
+    margin-top: 6rem;
+    padding: 0 5rem;
+    justify-content: space-between;
+}
+
+.search-filter {
+
+    .search-input {
+        background-color: var(--color-input);
+        width: 25rem;
+        border-radius: 0.2rem;
+        padding: 0.8rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        input {
+            border: none;
+            outline: none;
+            flex-grow: 1;
+            background-color: inherit;
+        }
+    
+    }
+}
+
+:host-context(.light) .search-input {
+    background-color: var(--color-elements-light);
+}
+
+:host-context(.dark) .search-input  {
+    background-color: var(--color-elements-dark);
+}
